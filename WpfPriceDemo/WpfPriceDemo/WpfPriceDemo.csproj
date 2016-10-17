@@ -58,9 +58,6 @@
     <Compile Include="Converter\ColorConverter.cs" />
     <Compile Include="Colum.cs" />
     <Compile Include="Converter\SizeConverter.cs" />
-    <Compile Include="Window3.xaml.cs">
-      <DependentUpon>Window3.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Window_another.xaml.cs">
       <DependentUpon>Window_another.xaml</DependentUpon>
     </Compile>
@@ -81,10 +78,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Window3.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Window_another.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

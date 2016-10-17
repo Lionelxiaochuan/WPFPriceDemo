@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:WpfPriceDemo"
              xmlns:coverter="clr-namespace:WpfPriceDemo.Converter"
-             StartupUri="Window3.xaml">
+             StartupUri="Window_another.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
