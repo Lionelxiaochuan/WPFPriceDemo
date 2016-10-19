@@ -10,8 +10,36 @@
         Title="Window_another" Height="300" Width="500">
     <Window.Resources>
     </Window.Resources>
-    <StackPanel>
-        <WrapPanel Name="sizePanel">
+    <Grid>
+        <ItemsControl x:Name="itemsControl">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Vertical" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <ItemsControl ItemsSource="{Binding Items}">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <StackPanel Orientation="Horizontal" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <CheckBox Style="{StaticResource CheckBoxTaobaoStyle}" 
+                                          Content="{Binding Data}" 
+                                          IsChecked="{Binding IsChecked}" IsEnabled="{Binding IsEnabled}"
+                                          Checked="CheckBox_Checked"
+                                          />
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <!--<StackPanel>-->
+        <!--<WrapPanel Name="sizePanel">
             <ItemsControl x:Name="sizeItemsControl" >
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
@@ -27,12 +55,10 @@
                                   IsEnabled="{Binding IsEnabled}"
                                   Unchecked="CheckBox_SizeUnchecked"
                                   Checked="CheckBox_SizeChecked"/>
-                        
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
         </WrapPanel>
-
         <WrapPanel Name="colorPanel">
             <ItemsControl x:Name="colorItemsControl" >
                 <ItemsControl.ItemsPanel>
@@ -52,8 +78,10 @@
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
-        </WrapPanel>
-        
-        
-    </StackPanel>
+        </WrapPanel>-->
+
+
+        <!--</StackPanel>-->
+    </Grid>
+
 </Window>

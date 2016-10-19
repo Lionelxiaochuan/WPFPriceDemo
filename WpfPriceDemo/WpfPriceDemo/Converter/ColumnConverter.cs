@@ -8,11 +8,11 @@ using System.Windows.Data;
 
 namespace WpfPriceDemo.Converter
 {
-    public class SizeConverter : IValueConverter
+    class ColumnConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return (value as Item).Data;
+            return value.ToString();
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

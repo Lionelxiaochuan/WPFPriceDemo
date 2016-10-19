@@ -8,7 +8,7 @@ using System.Windows.Data;
 
 namespace WpfPriceDemo.Converter
 {
-    public class SizeConverter : IValueConverter
+    class ValueConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {

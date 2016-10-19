@@ -55,8 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Converter\ColorConverter.cs" />
-    <Compile Include="Colum.cs" />
+    <Compile Include="Column.cs" />
+    <Compile Include="Converter\ValueConverter.cs" />
+    <Compile Include="Converter\ColumnConverter.cs" />
+    <Compile Include="Item.cs" />
     <Compile Include="Converter\SizeConverter.cs" />
     <Compile Include="Window_another.xaml.cs">
       <DependentUpon>Window_another.xaml</DependentUpon>

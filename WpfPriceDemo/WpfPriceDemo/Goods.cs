@@ -30,7 +30,7 @@ namespace WpfPriceDemo
         public Goods(string id,string name, int price, string size, string color,int surplus)
         {
             Id = id;
-            Name = name;
+            Brand = name;
             Price = price;
             Size = size;
             ColorPic = color;
@@ -40,7 +40,10 @@ namespace WpfPriceDemo
         /// ID
         /// </summary>
         public string Id { get; set; }
-
+        /// <summary>
+        /// 品牌
+        /// </summary>
+        public string Brand { get; set; }
         /// <summary>
         /// 名称
         /// </summary>

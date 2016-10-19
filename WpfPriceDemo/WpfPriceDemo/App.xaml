@@ -2,15 +2,16 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:WpfPriceDemo"
-             xmlns:coverter="clr-namespace:WpfPriceDemo.Converter"
+             xmlns:converter="clr-namespace:WpfPriceDemo.Converter"
              StartupUri="Window_another.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="CheckBoxTaobaoStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
-            <coverter:SizeConverter x:Key="sizeconverter"/>
-            <coverter:ColorConverter x:Key="colorconverter"/>
+            <converter:SizeConverter x:Key="sizeconverter"/>
+            <converter:ValueConverter x:Key="valueconverter"/>
+            <converter:ColumnConverter x:Key="columnConverter"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

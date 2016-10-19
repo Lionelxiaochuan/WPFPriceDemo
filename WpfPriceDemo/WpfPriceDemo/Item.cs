@@ -7,11 +7,14 @@ using System.Threading.Tasks;
 
 namespace WpfPriceDemo
 {
-    public  class Column : INotifyPropertyChanged
+    /// <summary>
+    /// 一个按钮的数据抽象
+    /// </summary>
+    public  class Item : INotifyPropertyChanged
     {
-        public Column()
+        public Item()
         { }
-        public Column(string data, bool isChecked = false,bool isEnabled = true)
+        public Item(string data, bool isChecked = false,bool isEnabled = true)
         {
             Data = data;
             IsChecked = isChecked;
