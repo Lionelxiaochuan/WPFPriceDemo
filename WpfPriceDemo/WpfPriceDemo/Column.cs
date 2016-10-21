@@ -9,13 +9,18 @@ using System.Threading.Tasks;
 /// </summary>
 namespace WpfPriceDemo
 {
-    class Column
+    public class Column
     {
         public Column() { }
 
         public Column(List<Item> items, string name = "")
         {
             Items = items;
+
+            foreach (var item in items)
+            {
+                item.Parent = this;
+            }
         }
         /// <summary>
         /// 所有子项

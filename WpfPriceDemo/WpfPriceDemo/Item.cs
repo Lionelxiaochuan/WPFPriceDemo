@@ -79,5 +79,7 @@ namespace WpfPriceDemo
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
 
+        public Column Parent { get; set; }
+
     }
 }

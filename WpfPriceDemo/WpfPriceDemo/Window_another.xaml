@@ -11,7 +11,7 @@
     <Window.Resources>
     </Window.Resources>
     <Grid>
-        <ItemsControl x:Name="itemsControl">
+        <ItemsControl x:Name="columnItemsControl">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
                     <StackPanel Orientation="Vertical" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center"/>
@@ -19,7 +19,7 @@
             </ItemsControl.ItemsPanel>
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-                    <ItemsControl ItemsSource="{Binding Items}">
+                    <ItemsControl ItemsSource="{Binding Items}" x:Name="itemItemsControl">
                         <ItemsControl.ItemsPanel>
                             <ItemsPanelTemplate>
                                 <StackPanel Orientation="Horizontal" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center"/>
@@ -27,7 +27,7 @@
                         </ItemsControl.ItemsPanel>
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
-                                <CheckBox Style="{StaticResource CheckBoxTaobaoStyle}" 
+                                    <CheckBox Style="{StaticResource CheckBoxTaobaoStyle}" 
                                           Content="{Binding Data}" 
                                           IsChecked="{Binding IsChecked}" IsEnabled="{Binding IsEnabled}"
                                           Checked="CheckBox_Checked"
